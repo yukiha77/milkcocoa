@@ -13,7 +13,7 @@ function clickEvent(){
 }
 
 function sendText(text,nm){
-  chatDataStore.push({unane : nm,content:text},function(data){
+  chatDataStore.push({msg : text,uname:um},function(data){
     console.log("送信完了!");
     textArea.value = "";
   });
