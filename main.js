@@ -5,8 +5,7 @@ var textArea, board,textName;
 window.onload = function(){
   textArea = document.getElementById("msg");
   board = document.getElementById("board");
-  textName = document.getElementById("textName"");
-}
+  textName = document.getElementById("textName");
 
 function clickEvent(){
   var text = textArea.value;
@@ -26,6 +25,6 @@ chatDataStore.on("push",function(data){
 
 function addText(text){
   var msgDom = document.createElement("li");
-  msgDom.innerHTML = text.uname+":"+text.content;;
+  msgDom.innerHTML = text.uname+":"+text.content;
   board.insertBefore(msgDom, board.firstChild);
 }
